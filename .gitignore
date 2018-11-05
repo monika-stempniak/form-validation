@@ -1,0 +1,4 @@
+/node_modules
+/dist/main.bundle.js
+/yarn-error.log
+.vscode*
