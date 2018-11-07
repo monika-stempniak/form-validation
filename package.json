@@ -6,7 +6,7 @@
   "author": "monika-stempniak <mstempniak@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --open --hot --inline",
     "build": "webpack --mode production"
   },
   "devDependencies": {
@@ -25,5 +25,11 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "main": "dist",
+  "files": [
+    "dist/index.html",
+    "dist/main.bundle.js",
+    "dist/main.css"
+  ]
 }
