@@ -10,7 +10,61 @@
 </head>
 
 <body>
-  <div>Form validation</div>
+  <div class="form-wrapper">
+    <h1>Form validation</h1>
+    <br />
+    <form>
+      <label for="username">
+        <input type="text" name="username" id="username" placeholder="Username" required value="John" />
+      </label>
+      <p class="username-error error"></p>
+      <br />
+      <label for="email">
+        <input type="email" name="email" id="email" placeholder="Email" required value="john@gmail.com" />
+      </label>
+      <p class="email-error error"></p>
+      <br />
+      <fieldset>
+        <legend>Choose gender</legend>
+        <br />
+        <label for="female">
+          <input type="radio" name="gender" id="female" value="female" />
+          Female
+        </label>
+        <br />
+        <label for="male">
+          <input type="radio" name="gender" id="male" value="male" />
+          Male
+        </label>
+        <br />
+      </fieldset>
+      <p class="gender-error error"></p>
+      <br />
+      <label for="rodo">
+        <input type="checkbox" name="rodo" id="rodo" />
+        I agree with RODO policy
+      </label>
+      <p class="rodo-error error"></p>
+      <br />
+      <label for="regions">
+        <select id="regions" name="regions" required>
+          <option value="" disabled selected>Choose region</option>
+          <option value="All regions">All regions</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </label>
+      <br /><br />
+      <label for="remark">
+        <textarea id="remark" name="remark" rows="10" cols="50" placeholder="Your remark..." required></textarea>
+      </label>
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 
 </html>
