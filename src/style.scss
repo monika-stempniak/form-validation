@@ -3,3 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.form-wrapper {
+  margin: 20px;
+
+  h1 {
+    color: blue;
+  }
+}
+
+.error {
+  color: red;
+}
+
+input.is-not-valid,
+select.is-not-valid,
+textarea.is-not-valid {
+  border: 1px solid red;
+}
+
+input[type="checkbox"].is-not-valid {
+  outline: 1px solid red;
+}
